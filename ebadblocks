@@ -68,7 +68,7 @@ unset i
 
 set +u
 opt_args=("${parsed_badblocks_args[@]:0:$separator_idx}")
-pos_args=(${parsed_badblocks_args[@]:$separator_idx})
+pos_args=(${parsed_badblocks_args[@]:$separator_idx+1})
 set -u
 
 if ${DEBUG}; then
